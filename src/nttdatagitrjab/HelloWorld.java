@@ -1,4 +1,4 @@
-package nttdatagitworkshop;
+package nttdatagitrjab;
 
 /**
  * 
@@ -27,6 +27,7 @@ public class HelloWorld {
 		System.out.println("Third Commit --> Se ha incluido un segundo saludo");
 		System.out.println("Fourth Commit --> Se muestra esta lista de commits");
 		System.out.println("Fifth Commit --> Saludo desde rama \"branchTest\"\n");
+		System.out.println("Sixth Commit --> Refactorización del nombre del proyecto ");
 		
 		System.out.println("Buenas tardes Téllez, este saludo se implementó en la rama \"branchTest\"");
 		
