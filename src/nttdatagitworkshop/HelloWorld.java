@@ -1,4 +1,4 @@
-package gitproject;
+package nttdatagitworkshop;
 
 /**
  * 
@@ -6,7 +6,7 @@ package gitproject;
  *
  */
 
-public class Git {
+public class HelloWorld {
 	
 	/**
 	 * 
@@ -15,9 +15,10 @@ public class Git {
 	 * Método principal de la clase
 	 */
 	public static void main(String[] args) {
-		System.out.println("Hola Mundo");
+				
+		System.out.println("Buenas Téllez, te saludo desde la rama \"branchTest\"");
 		
-		System.out.println("Hola Téllez, este saludo forma parte de mi tercer commit");
+		
 		
 	}
 }
