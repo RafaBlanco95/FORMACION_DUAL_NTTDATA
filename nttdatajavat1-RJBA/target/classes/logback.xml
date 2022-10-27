@@ -1,0 +1,38 @@
+<configuration packagingData="false" debug="true">
+
+	<!-- VARIABLE DE FECHA PARA EL NOMBRE DEL FICHERO.LOG -->
+	
+		<timestamp key="logDate" datePattern="dd-MM-yyyy" />
+
+
+	<!-- DECLARACIÓN DE APPENDERS -->
+	
+		<!-- FILEAPPENDER  -->
+		
+			<appender name="NTTDataLogFA" class="ch.qos.logback.core.FileAppender">
+			
+				<file>G:/DESARROLLO/TOOLS/LogFiles/nttatajavat1log-${logDate}.log</file>
+				
+				<append>false</append>
+				
+				<immediateFlush>true</immediateFlush>
+				
+				<encoder>
+				
+					<pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - [%method]- %msg%n</pattern>
+					
+				</encoder>
+				
+			</appender>
+
+
+
+	<!-- LOGGER -->
+	
+		<root level="debug">
+		
+			<appender-ref ref="NTTDataLogFA" />
+			
+		</root>
+		
+</configuration>
