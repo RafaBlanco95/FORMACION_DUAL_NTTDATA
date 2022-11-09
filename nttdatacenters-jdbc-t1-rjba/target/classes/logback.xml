@@ -1,0 +1,35 @@
+<configuration packagingData="false" debug="true">
+
+	<!-- VARIABLE DE FECHA PARA EL NOMBRE DEL FICHERO.LOG -->
+	<timestamp key="logDate" datePattern="dd-MM-yyyy" />
+
+
+<!--  DECLARAMOS LOS APPENDERS O TUBERÍAS 
+		(Se pretende utilizar tanto el appender para mostrar por consola como el appender para los ficheros
+		 particionados y comprimidos)-->
+
+
+	<!-- APPENDERCONSOLE -->
+	<appender name="NTTDataLogAC" class="ch.qos.logback.core.ConsoleAppender">
+		<encoder class="ch.qos.logback.core.encoder.LayoutWrappingEncoder">
+			<layout class="com.nttdata.logback.NTTDataLayout">
+				<prefix>NTTDataLayout</prefix>
+				<printThreadName>true</printThreadName>
+			</layout>
+		</encoder>
+	</appender>
+
+
+
+
+	<!-- LOGGER -->
+	<root level="debug">
+		<appender-ref ref="NTTDataLogAC" />
+	</root>
+	
+	<root level="info">
+		<appender-ref ref="NTTDataLogAC" />
+	</root>
+	
+
+</configuration>
