@@ -14,7 +14,7 @@ import com.nttdata.hibernate.persistence.CustomerDaoImpl;
  */
 public class CustomerManagementServiceImpl implements CustomerManagementServiceI {
 	
-	/** DAO: HIBERNATE_CUSTOMER */
+	/** DAO: T_HIBERNATE_CUSTOMER */
 	private CustomerDaoI customerDao;
 
 	/**

@@ -11,6 +11,7 @@ import org.hibernate.Session;
  *
  */
 public abstract class CommonDaoImpl<T extends AbstractEntity> implements CommonDaoI<T> {
+	
 	/** Tipo de clase */
 	private Class<T> entityClass;
 

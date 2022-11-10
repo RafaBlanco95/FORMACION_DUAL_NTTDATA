@@ -22,28 +22,28 @@ public interface CustomerManagementServiceI {
 	public void insertNewCustomer(final Customer newCustomer);
 
 	/**
-	 * Actualiza un cliente existente.
+	 * Actualiza un cliente existente
 	 * 
 	 * @param updatedCustomer Cliente actualizado
 	 */
 	public void updateCustomer(final Customer updatedCustomer);
 
 	/**
-	 * Elimina un cliente existente.
+	 * Elimina un cliente existente
 	 * 
 	 * @param deletedCustomer Cliente eliminado
 	 */
 	public void deleteCustomer(final Customer deletedCustomer);
 
 	/**
-	 * Devuelve un cliente mediante su ID.
+	 * Devuelve un cliente mediante su ID
 	 * 
 	 * @param customerId Identificador del cliente 
 	 */
 	public Customer searchById(final Long customerId);
 
 	/**
-	 * Devuelve todos los clientes existentes.
+	 * Devuelve todos los clientes existentes
 	 * 
 	 * @return Lista de todos los clientes presentes en la BBDD
 	 */
