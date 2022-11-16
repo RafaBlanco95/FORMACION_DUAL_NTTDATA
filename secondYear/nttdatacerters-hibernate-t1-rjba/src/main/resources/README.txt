@@ -21,7 +21,7 @@ Se ha creado un proyecto java en el que se han cumplido los requisitos del enunc
 -APACHE MAVEN
 -LOGBACK
 -HIBERNATE 
--JPA
+
 
 Para la resolución del taller se ha utilizado el patrón DAO, usando clases genéricas [CommonDaoI, CommonDaoImpl, AbstractEntity] para aportar escalabilidad al proyecto, ya que en este taller únicamente se trabaja con una entidad, pero será utilizado como base para los próximos talleres de esta tecnología, en los que serán necesarias estas clases genéricas 
 Para más información consultar los comentarios del código de cada una de las clases 
