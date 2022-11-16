@@ -1,0 +1,4 @@
+com.nttdata.hibernate
+com.nttdata.hibernate.persistence
+com.nttdata.hibernate.services
+com.nttdata.logback

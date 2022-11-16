@@ -1,0 +1,26 @@
+[NTT Data] [FP-Dual 2021-2023][2º Curso]
+
+Proyecto del Taller Práctico 2 de HIBERNATE
+
+**Enunciado del Taller
+
+-Elaborar un nuevo proyecto web en base a las siguientes indicaciones:
+
+-Sobre el ejercicio del taller 1 se deberá adaptar el modelo para incorporar una nueva tabla Contrato cuya relación será de 1:N con la de clientes. Un cliente podrá tener de cero a varios contratos y un contrato sólo estará asociado a un cliente. El contrato tendrá los siguientes atributos o columnas; identificador numérico, fecha de vigencia, fecha de caducidad, precio mensual y la propia relación con Cliente. La entidad Cliente se actualizará para añadir la relación con Contrato.
+
+-Se requiere la implementación del patrón DAO. El patrón DAO definirá los métodos CRUD (insertar, consultar todos, consultar por ID, eliminar, actualizar) para la entidad. Además, la entidad Contrato contará con un método de búsqueda por identificador del Cliente.
+
+-Se creará un servicio de gestión de Contratos que consuma el DAO correspondiente. Desde la clase principal se consumirá el servicio haciendo uso de todos los métodos creados.
+
+-El mapeo de Hibernate se ha de realizar mediante anotaciones JPA. La configuración se realizará en el fichero hibernate.cfg.xml en caso de no utilizar Spring Boot (que pasaría a ser application.properties).
+
+**Resolución del Taller
+
+Se ha creado un proyecto java en el que se han cumplido los requisitos del enunciado, aplicando las tecnologías:
+
+-APACHE MAVEN
+-LOGBACK
+-HIBERNATE
+
+Para la resolución del taller se ha incluido, sobre el taller 1, la clase Contrato y su relación con la clase Cliente haciendo unso de HIBERNATE. En el método main() de la clase HibernateMain se han inicializado las clases (tablas) mencionadas y se han puesto
+en práctica todos los métodos implementados en la clase DAO de cada una de ellas, mostrando la ejecución y el resultado de cada uno de ellos por consola a través de las trazas.
