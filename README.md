@@ -14,3 +14,4 @@ Incluye:
 -Taller Práctico de JDBC
 -Taller Práctico 1 de HIBERNATE
 -Taller Práctico 2 de HIBERNATE
+-Taller Práctico 3 de HIBERNATE
