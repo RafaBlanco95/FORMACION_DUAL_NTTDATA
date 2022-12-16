@@ -1,0 +1,24 @@
+[NTT Data] [FP-Dual 2021-2023][2º Curso]
+
+Proyecto del Taller Práctico 2 de HIBERNATE
+
+**Enunciado del Taller
+
+-Elaborar un nuevo proyecto web en base a las siguientes indicaciones:
+
+-Sobre el taller 2 de Hibernate se deberá adaptar la interface e implementación DAO de ambas entidades (contratos y clientes) para la incorporación de dos consultas definidas e implementadas con JPA Criteria.
+
+-Se requiere la actualización de las interfaces e implementaciones de los servicios asociados para consumir los nuevos métodos en los DAO.
+
+**Resolución del Taller
+
+Se ha creado un proyecto java en el que se han cumplido los requisitos del enunciado, aplicando las tecnologías:
+
+-APACHE MAVEN
+-LOGBACK
+-JPA
+-HIBERNATE
+-JPA CRITERIA
+
+Para la resolución del taller se ha incluido, sobre el taller 2, la realización de una consulta sobre la base de datos utilizando JPA CRITERIA, en la que se buscan los clientes que tengan un primer apellido y un coste de contrato determinados. 
+Para ello se hace uso del servicio de contratos, al final del método principal de la clase HibernateMain.java

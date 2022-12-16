@@ -1,0 +1,16 @@
+com\nttdata\hibernate\persistence\CommonDaoImpl.class
+com\nttdata\hibernate\services\CustomerManagementServiceI.class
+com\nttdata\hibernate\persistence\ContractDaoI.class
+com\nttdata\hibernate\persistence\Contract.class
+com\nttdata\logback\NTTDataLayout.class
+com\nttdata\hibernate\services\ContractManagementServiceImpl.class
+com\nttdata\hibernate\services\CustomerManagementServiceImpl.class
+com\nttdata\hibernate\persistence\Customer.class
+com\nttdata\hibernate\persistence\CommonDaoI.class
+com\nttdata\hibernate\persistence\AbstractEntity.class
+com\nttdata\hibernate\persistence\CustomerDaoI.class
+com\nttdata\hibernate\persistence\CustomerDaoImpl.class
+com\nttdata\hibernate\persistence\ContractDaoImpl.class
+com\nttdata\hibernate\HibernateMain.class
+com\nttdata\hibernate\HibernateUtil.class
+com\nttdata\hibernate\services\ContractManagementServiceI.class
