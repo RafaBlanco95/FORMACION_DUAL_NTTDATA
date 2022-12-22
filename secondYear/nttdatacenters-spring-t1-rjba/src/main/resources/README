@@ -1,0 +1,26 @@
+[NTT Data] [FP-Dual 2021-2023][2º Curso]
+
+Proyecto del Taller Práctico 1 de Spring
+
+**Enunciado del Taller
+
+Elaborar un nuevo proyecto web en base a las siguientes indicaciones:
+
+-Se utilizará el modelo de capas propuesto por Spring del que sólo se hará uso de la capa servicios que será consumida desde la clase principal (main) La estructura de paquetes estará determinada por éste modelo. El modelo de datos o persistencia puede ser simulado sin necesidad de acceso a BBDD.
+
+-La aplicación requiere que, desde la clase principal, pueda consumirse un servicio que añada personas a la simulación (mediante estructuras de datos de Java) de un edificio de N plantas con Z apartamentos por cada una de ellas. Esta clase asociada al edificio simulará nuestro repositorio o tabla. No es necesario que exista más de una persona por planta. La persona se identificará mediante su nombre y apellidos.
+
+-La aplicación requiere que, desde la clase principal, pueda consumirse un servicio que consulte todos los habitantes del edificio anteriormente creado.
+
+-La aplicación requiere que, desde la clase principal, pueda consumirse un servicio que pueda buscar por nombre y apellidos una persona dentro del edificio.
+
+
+**Resolución del Taller
+
+Se ha creado un proyecto java en el que se han cumplido los requisitos del enunciado, aplicando las tecnologías:
+
+-APACHE MAVEN
+-LOGBACK / SLF4J
+-SPRING BOOT
+
+Se ha emulado con estructuras de datos dde Java un edificio con dos plantas, con dos apartamentos por planta, en el que vivenn dos habitantes por apartamento. A partir de estaa estrucctura ya formada, se ha consumido el servicio de habitantes para añadir un habitante al primer apartamento del piso 1, para buscar todos los habitantes del edificio y para buscar los habitantes que tengan de nombre y apellidos Rafael Blanco Aranda
