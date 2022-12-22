@@ -27,11 +27,12 @@ public class Floor  implements Serializable{
 		return apartments;
 	}
 
+ 
 	/**
 	 * 
-	 * Setter de la lista de apartamentos 
+	 * La lista de apartamentos
 	 * 
-	 * @param apartaments la lista de apartamentos
+	 * @param apartments la lista de apartamentos
 	 */
 	public void setApartaments(Apartment[] apartments) {
 		this.apartments = apartments;
