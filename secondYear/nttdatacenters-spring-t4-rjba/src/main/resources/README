@@ -1,0 +1,32 @@
+[NTT Data] [FP-Dual 2021-2023][2º Curso]
+
+Proyecto del Taller Práctico 4 de Spring
+
+**Enunciado del Taller
+
+Elaborar un nuevo proyecto web en base a las siguientes indicaciones:
+
+-Se reutilizará el Taller 3 para ampliar la aplicación con el añadido de Spring MVC.
+-Se sumarán las dependencias de Spring Web, JSR-303 y Thymeleaf.
+-Se requiere un CRUD básico:
+-Menú con las opciones:
+-Mostrar clientes.
+-Añadir un nuevo cliente.
+-Consultar clientes por nombre.
+-Desde la opción de mostrar clientes se mostrará una tabla con toda la información de un cliente junto a un botón para eliminar ese cliente.
+-Desde la pantalla de añadir un nuevo cliente se deberá cumplimentar un formulario para informar todos los datos necesarios para un cliente.
+-Desde la pantalla de consulta por nombre de cliente existirá un campo de texto en el que se introducirá el nombre a buscar y un botón de consulta.
+
+
+**Resolución del Taller
+
+Se ha creado un proyecto java en el que se han cumplido los requisitos del enunciado, aplicando las tecnologías:
+
+-APACHE MAVEN
+-LOGBACK / SLF4J
+-SPRING BOOT
+-SPRING DATA
+-SPRING MVC
+
+Se han implementado controladores en la aplicación para gestionar el paso por las vistas generadas. 
+Se ha implementado un CRUD para poder añadir, buscar, eliminar y mostrar todos los clientes a través de las vistas

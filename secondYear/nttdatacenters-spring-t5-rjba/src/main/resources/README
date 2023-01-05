@@ -1,0 +1,26 @@
+[NTT Data] [FP-Dual 2021-2023][2º Curso]
+
+Proyecto del Taller Práctico 5 de Spring
+
+**Enunciado del Taller
+
+Elaborar un nuevo proyecto web en base a las siguientes indicaciones:
+
+-Se reutilizará el Taller 4 a fin de convertir la aplicación desarrollada hasta el momento en una aplicación REST.
+
+-No habrá una vista tal como en el desafío anterior. Todas las operaciones de la API REST se realizarán mediante la aplicación Postman.
+
+
+**Resolución del Taller
+
+Se ha creado un proyecto java en el que se han cumplido los requisitos del enunciado, aplicando las tecnologías:
+
+-APACHE MAVEN
+-LOGBACK / SLF4J
+-SPRING BOOT
+-SPRING DATA
+-SPRING MVC
+-SPRING REST
+
+Se ha implementado un controlador siguiendo la arquitectura REST en el que se permiten realizar peticiones http mediante postman a la aplicación 
+

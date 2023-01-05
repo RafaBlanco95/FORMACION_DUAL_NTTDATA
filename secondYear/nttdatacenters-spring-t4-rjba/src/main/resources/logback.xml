@@ -1,0 +1,59 @@
+<configuration packagingData="false" debug="true">
+
+	<!-- VARIABLE DE FECHA PARA EL NOMBRE DEL FICHERO.LOG -->
+	<timestamp key="logDate" datePattern="dd-MM-yyyy" />
+
+
+<!--  DECLARAMOS LOS APPENDERS O TUBERÍAS 
+		(Se pretende utilizar tanto el appender para mostrar por consola como el appender para los ficheros
+		 particionados y comprimidos)-->
+
+
+	<!-- APPENDERCONSOLE -->
+	<appender name="NTTDataLogAC" class="ch.qos.logback.core.ConsoleAppender">
+		<encoder class="ch.qos.logback.core.encoder.LayoutWrappingEncoder">
+			<layout class="com.nttdata.logback.NTTDataLayout">
+				<prefix>NTTDataLayout</prefix>
+				<printThreadName>true</printThreadName>
+			</layout>
+		</encoder>
+	</appender>
+
+
+	<!-- ROLLINGFILEAPPENDER -->
+	<appender name="NTTDataLogRFA" class="ch.qos.logback.core.rolling.RollingFileAppender">
+	    <!--  Se establece el nombre del archivo que se va a generar (logRafaelJBA-Fecha.log)-->
+		<file>C:/Users/Rafa/Desktop/DESARROLLO/LOGS/logRafaelJBA-${logDate}.log</file>
+		<append>true</append>
+		<immediateFlush>false</immediateFlush>
+
+
+		<rollingPolicy class="ch.qos.logback.core.rolling.FixedWindowRollingPolicy">
+		<!--  Se establece el nombre de los archivos comprimidos que se van a generar -->
+			<fileNamePattern>C:/Users/Rafa/Desktop/DESARROLLO/LOGS/logRafaelJBA-${logDate}.%i.log.zip </fileNamePattern>
+			<minIndex>1</minIndex>
+			<maxIndex>3</maxIndex>
+		</rollingPolicy>
+
+		<triggeringPolicy class="ch.qos.logback.core.rolling.SizeBasedTriggeringPolicy">
+		<!--  Se establece el tamaño máximo de los archivos comprimidos que se van a generar en 3-->
+			<maxFileSize>50KB</maxFileSize>
+		</triggeringPolicy>
+		<encoder>
+			<pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - [%method]- %msg%n</pattern>
+		</encoder>
+	</appender>
+
+	<!-- LOGGER -->
+	<root level="debug">
+		<appender-ref ref="NTTDataLogRFA" />
+		<appender-ref ref="NTTDataLogAC" />
+	</root>
+	
+	<root level="info">
+		<appender-ref ref="NTTDataLogRFA" />
+		<appender-ref ref="NTTDataLogAC" />
+	</root>
+	
+
+</configuration>

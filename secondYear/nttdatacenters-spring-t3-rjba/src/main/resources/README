@@ -1,0 +1,28 @@
+[NTT Data] [FP-Dual 2021-2023][2º Curso]
+
+Proyecto del Taller Práctico 3 de Spring
+
+**Enunciado del Taller
+
+Elaborar un nuevo proyecto web en base a las siguientes indicaciones:
+
+-Se utilizará el modelo de capas propuesto por Spring del que sólo se hará uso de las capas de servicios y repositorio que será consumida desde la clase principal (main) La estructura de paquetes estará determinada por éste modelo.
+
+-El modelo de datos será una tabla (Cliente) cuyos atributos serán identificador numérico, nombre, apellidos, fecha de nacimiento y número de documento de identidad. Se requiere implementar JPA (Hibernate) para definir la entidad.
+
+-Se requiere la implementación del patrón Repositorio sobre las entidades. Sobre el repositorio de Cliente se creará además un servicio que busque mediante nombre y apellidos.
+
+-Se creará un servicio de gestión de Clientes que consuma el repositorio correspondiente. Desde la clase principal se consumirá el servicio haciendo uso del método creado en el repositorio así como de los métodos CRUD proporcionados por Spring Data.
+
+
+**Resolución del Taller
+
+Se ha creado un proyecto java en el que se han cumplido los requisitos del enunciado, aplicando las tecnologías:
+
+-APACHE MAVEN
+-LOGBACK / SLF4J
+-SPRING BOOT
+-SPRING DATA
+
+Para la resolución del taller se ha implementado un repositorio con la entidad Cliente (Customer) en Spring Data.
+

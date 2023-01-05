@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Spring MVC Customer</title>
+<link rel="stylesheet"
+	href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<script
+	src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+<body class="card-body">
+	<div class="card text-black bg-warning mb-3">
+		<div class="card-header">
+			<h1>Menu de Eliminación de Clientes.</h1>
+		</div>
+		<div class="card-body">
+			<form th:action="@{./deleteConfirmed}" th:object="${clienteConId}"
+				method="POST">
+				<div class="form-group">
+					<label class="text-black" for="inpTid">Repita el Id del
+						Cliente que desea eliminar</label> <br /> <input type="text"
+						required="required" class="form-control" id="inpTid" name="id"
+						placeholder="1">
+
+					<button type="submit" name="btnDeleteCustomer"
+						class="btn btn-success">Eliminar Cliente</button>
+			</form>
+		</div>
+	</div>
+	<div>
+		<button type="submit" class="btn btn-success">
+			<a class="text-reset text-decoration-none"
+				href="http://localhost:8080/home/customers/"> Volver al Menú
+				Principal </a>
+		</button>
+	</div>
+</body>
+</html>

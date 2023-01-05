@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Spring MVC Customer</title>
+<link rel="stylesheet"
+	href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<script
+	src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+<body class="card-body">
+	<div class="card text-white bg-danger mb-3">
+		<div class="card-header">
+			<h1>Menu de Nuevos Clientes.</h1>
+		</div>
+		<div class="card-body">
+			<form th:action="@{./createCustomer}" th:object="${clienteNuevito}"
+				method="POST">
+				<div class="form-group">
+					<label for="inpTname">Nombre</label> <input type="text"
+						required="required" class="form-control" id="inpTname" name="name"
+						placeholder="Aurelio">
+				</div>
+				<div class="form-group">
+					<label for="inpTlastName">Apellidos</label> <input type="text"
+						required="required" class="form-control" id="inpTlastName"
+						name="lastName" placeholder="Fernández.">
+				</div>
+				<div class="form-group">
+					<label for="inpTbirthDate">Fecha de nacimiento</label> <input
+						required="required" type="text" class="form-control"
+						id="inpTbirthDate" name="birthDate" placeholder="01-01-1999">
+				</div>
+				<div class="form-group">
+					<label for="inpTdni">DNI</label> <input required="required"
+						type="text" class="form-control" id="inpTdni" name="dni"
+						placeholder="77777777">
+				</div>
+				<button type="submit" name="btnCreateCustomer"
+					class="btn btn-success">Inscribir Cliente</button>
+			</form>
+
+		</div>
+
+	</div>
+	<div>
+		<button type="submit" class="btn btn-success">
+			<a class="text-reset text-decoration-none"
+				href="http://localhost:8080/home/customers/"> Volver al Menú
+				Principal </a>
+		</button>
+	</div>
+</body>
+</html>

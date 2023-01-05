@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>NTT Data Cocina</title>
+<link rel="stylesheet"
+	href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<script
+	src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+	<h1>Los Clientes registrados son los siguientes</h1>
+
+	<table class="table">
+		<thead class="thead-dark">
+			<tr>
+				<th scope="col">Id</th>
+				<th scope="col">Nombre</th>
+				<th scope="col">Apellidos</th>
+				<th scope="col">Fecha de Nacimiento</th>
+				<th scope="col">DNI</th>
+				<th scope="col"></th>
+			</tr>
+		</thead>
+		<tbody>
+			<th:block th:each="customer : ${customers}">
+				<tr>
+					<td scope="row" th:text="${customer.id}"></td>
+					<td scope="row" th:text="${customer.name}"></td>
+					<td scope="row" th:text="${customer.lastName}"></td>
+					<td scope="row" th:text="${customer.birthDate}"></td>
+					<td scope="row" th:text="${customer.dni}"></td>
+					<td scope="row">
+						<button type="submit" class="btn btn-success">
+							<a class="text-reset text-decoration-none"
+								href="./deleteCustomer/"> Eliminar Cliente </a>
+						</button>
+				</tr>
+			</th:block>
+		</tbody>
+	</table>
+	<div>
+		<button type="submit" class="btn btn-success">
+			<a class="text-reset text-decoration-none"
+				href="http://localhost:8080/home/customers/"> Volver al Menú
+				Principal </a>
+		</button>
+	</div>
+</body>
+</html>
